@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# GrapesJS React Integration App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project integrates **GrapesJS** into a **React** application, allowing you to dynamically build and manage custom components like text blocks, box layouts, and avatar components. It provides features for real-time component customization through a toolbar and allows saving and reloading content from local storage.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Component Building**: Add text, box, and avatar components to your page using GrapesJS.
+- **Custom Toolbar**: Modify selected components using a custom toolbar (e.g., change text size, toggle bold, set flex direction for box blocks).
+- **Real-time Preview**: View and interact with components in real-time within a customizable editor.
+- **Save/Load Functionality**: Save your page design to local storage and reload it later.
+- **React Integration**: Render saved content as React components (e.g., `<Box>`, `<Text>`, `<Avatar>`).
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Front-end framework for building the UI.
+- **GrapesJS**: JavaScript framework for building web pages using a visual editor.
+- **SCSS**: Used for styling the components.
+- **Custom Icon Library**: Uses `sebikostudio-icons` for toolbar icons.
+- **blocksin-system**: UI component system for buttons, inputs, and toolbars.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sebastiangrochocki/grapesjs-react-demo.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install the dependencies:
+   ```bash
+   cd grapesjs-react-demo
+   npm install
+   ```
 
-### `npm run build`
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   This will open the app in your browser at `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Add Blocks**: Use the block manager to add **Text**, **Box**, or **Avatar** components.
+- **Edit Components**: Select a component to open the toolbar, where you can change text size, toggle bold, or set avatar image URLs.
+- **Save Design**: Click on the "Save" button to store your design in local storage.
+- **Reload Design**: The app will automatically load your last saved design from local storage on page refresh.
 
-### `npm run eject`
+## File Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+src/
+│
+├── App.js             # Main application file integrating GrapesJS
+├── Template.js        # Component for rendering saved components as React elements
+├── index.js           # React entry point
+└── App.scss           # Main stylesheet
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Key Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `App.js`
+This is the main file that initializes the GrapesJS editor and handles interactions like component selection, toolbar actions, and saving/loading content.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `Template.js`
+This file renders the saved components as React elements (e.g., `<Box>`, `<Text>`, `<Avatar>`).
 
-## Learn More
+## Customization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can easily extend the app by adding new blocks or modifying existing ones. To add a new block, use the `BlockManager` from GrapesJS as shown in `App.js`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Example of adding a custom block:
 
-### Code Splitting
+```javascript
+editorInstance.BlockManager.add("custom-block", {
+  label: "Custom Block",
+  content: "<div>Custom Block Content</div>",
+  category: "Components",
+});
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
