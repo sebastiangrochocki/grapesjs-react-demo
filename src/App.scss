@@ -1,0 +1,218 @@
+
+body {
+  font-family: "Arial", "Helvetica";
+  font-weight: 400;
+}
+* ::-webkit-scrollbar-track {
+  background: transparent;
+}
+* ::-webkit-scrollbar-thumb {
+  background: var(--background-neutral-active);
+  border-radius: 4px;
+  &:hover {
+    background: var(--brand-2);
+  }
+}
+* ::-webkit-scrollbar {
+  width: 4px;
+}
+.Toggle-medium {
+  min-width: 44px;
+}
+.markup {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.markup div > pre {
+  margin: 0 !important;
+}
+.GrapesJsApp {
+  background-color: var(--background-neutral-hover);
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-top: 96px;
+  padding-bottom: 48px;
+  .Editor {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    min-height: 100vh;
+    #gjs {
+      flex: 7;
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid var(--border-neutral-subtle);
+      box-shadow: var(--shadow-level-1);
+    }
+    #blocks {
+      flex: 1;
+      margin-right: 16px;
+      box-sizing: border-box;
+      gap: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.page {
+  &:empty {
+    min-height: 400px;
+    background-color: transparent !important;
+    border: 1px dashed var(--gray-400) !important;
+    box-shadow: none !important;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+//
+.gjs-blocks-cs {
+  background-color: transparent;
+  .gjs-block-category {
+    border: 1px solid var(--border-neutral-subtle);
+    background-color: white;
+    border-radius: 8px;
+    .gjs-blocks-c {
+      flex-direction: column;
+      padding: 12px;
+      gap: 8px;
+      .gjs-block {
+        background-color: var(--background-neutral);
+        width: auto;
+        flex: 1;
+        border: none;
+        box-sizing: border-box;
+        box-shadow: none;
+        padding: 12px;
+        margin: 0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+        color: var(--foreground-neutral);
+        font-size: 14px;
+        .gjs-block-label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 12px;
+          svg {
+            fill: none;
+          }
+        }
+
+        &:hover {
+          box-shadow: var(--shadow-level-2);
+          color: var(--foreground-neutral);
+        }
+      }
+    }
+  }
+}
+.gjs-title {
+  background-color: transparent !important;
+  color: var(--foreground-neutral);
+  padding: 8px !important;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border: 0 !important;
+  .custom-caret-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      * {
+        stroke-width: 1.25px;
+      }
+    }
+  }
+}
+.gjs-toolbar {
+  background-color: transparent;
+  .gjs-toolbar-item {
+    border-radius: 4px;
+    background-color: var(--black-200);
+  }
+}
+.gjs-toolbar-items {
+  display: flex;
+  gap: 4px;
+}
+.gjs-toolbar-item-color {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  span {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    display: flex;
+  }
+}
+.gjs-cv-canvas {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.box-block {
+  padding: 24px;
+  border: 1px solid #c7c7c7;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.avatar-block {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #c7c7c7;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+.text-large {
+  font-size: 32px;
+}
+.text-medium {
+  font-size: 16px;
+}
+.text-small {
+  font-size: 12px;
+}
+.direction-column {
+  flex-direction: column;
+}
+.direction-row {
+  flex-direction: row;
+}
+.bold {
+  font-weight: 900;
+  font-family: "BeVietnamPro-Black";
+}
+.bg-red {
+  background-color: #f55f55;
+}
+.bg-white {
+  background-color: white;
+}

@@ -1,0 +1,73 @@
+/**
+* @license
+*
+* Font Family: Be Vietnam Pro
+* Designed by: Lam Bao, Tony Le, Vietanh Nguyen
+* URL: https://www.fontshare.com/fonts/beVietnam-pro
+* © 2024 Indian Type Foundry
+*
+* Be Vietnam Pro Thin 
+* Be Vietnam Pro ThinItalic 
+* Be Vietnam Pro ExtraLight 
+* Be Vietnam Pro ExtraLightItalic 
+* Be Vietnam Pro Light 
+* Be Vietnam Pro LightItalic 
+* Be Vietnam Pro Regular 
+* Be Vietnam Pro Italic 
+* Be Vietnam Pro Medium 
+* Be Vietnam Pro MediumItalic 
+* Be Vietnam Pro SemiBold 
+* Be Vietnam Pro SemiBoldItalic 
+* Be Vietnam Pro Bold 
+* Be Vietnam Pro BoldItalic 
+* Be Vietnam Pro ExtraBold 
+* Be Vietnam Pro ExtraBoldItalic 
+* Be Vietnam Pro Black 
+* Be Vietnam Pro BlackItalic 
+* Be Vietnam Pro Variable (Variable font)
+* Be Vietnam Pro VariableItalic (Variable font)
+
+*
+*/
+
+@font-face {
+  font-family: "BeVietnamPro-Regular";
+  src:
+    url("../fonts/BeVietnamPro-Regular.woff2") format("woff2"),
+    url("../fonts/BeVietnamPro-Regular.woff") format("woff"),
+    url("../fonts/BeVietnamPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-Italic";
+  src:
+    url("../fonts/BeVietnamPro-Italic.woff2") format("woff2"),
+    url("../fonts/BeVietnamPro-Italic.woff") format("woff"),
+    url("../fonts/BeVietnamPro-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BeVietnamPro-Black";
+  src:
+    url("../fonts/BeVietnamPro-Black.woff2") format("woff2"),
+    url("../fonts/BeVietnamPro-Black.woff") format("woff"),
+    url("../fonts/BeVietnamPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-BlackItalic";
+  src:
+    url("../fonts/BeVietnamPro-BlackItalic.woff2") format("woff2"),
+    url("../fonts/BeVietnamPro-BlackItalic.woff") format("woff"),
+    url("../fonts/BeVietnamPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}

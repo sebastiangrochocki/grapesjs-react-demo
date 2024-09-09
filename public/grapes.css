@@ -1,0 +1,59 @@
+/* My Custom Blocks Styles */
+@import "./fonts/beVietnam-pro.css";
+
+* {
+    font-family: "BeVietnamPro-Regular";
+    font-weight: 400;
+}
+.box-block {
+    padding: 24px;
+    border: 1px solid #c7c7c7;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.avatar-block {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #c7c7c7;
+}
+.avatar-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+}
+.text-large {
+    font-size: 32px;
+}
+.text-medium {
+    font-size: 16px;
+}
+.text-small {
+    font-size: 12px;
+}
+.direction-column {
+    flex-direction: column;
+}
+.direction-row {
+    flex-direction: row;
+}
+.bold {
+    font-weight: 900;
+    font-family: "BeVietnamPro-Black";
+}
+.bg-red {
+    background-color: #f55f55;
+}
+.bg-white {
+    background-color: white;
+}
